@@ -4,9 +4,14 @@ body, html
         width:100%;
         margin: 0;
         padding: 0;
+
     }
 
+body {
 
+    font-family: monospace;
+    line-height: 2;
+}
 header {
 background-color: yellow;
 }
@@ -37,6 +42,7 @@ nav ul li {
 padding: 10px;
 list-style: none;
 margin: 0;
+color: #FEFFD4;
 }
 
 
@@ -97,3 +103,31 @@ h2 {
 textarea {
     max-width: 90%;
 }
+
+
+@media only screen and (max-width: 550px) {
+    nav {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        width: 100%;
+    }
+	nav ul li {
+	display: -webkit-inline-box;
+	padding: 0.5em;
+	}
+
+	main {
+		margin-left: 0;
+	}
+@media only screen and (max-width: 320px) {
+
+	nav ul {
+		font-size: smaller;
+		}
+
+	h1 {
+		font-size: 1.8em;
+		}
+}
+
